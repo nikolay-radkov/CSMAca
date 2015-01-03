@@ -1,0 +1,16 @@
+{
+  "name": "CSMAca",
+  "version": "0.0.0",
+  "authors": [
+    "nikolay-radkov <nikolay.kirilov.radkov@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
