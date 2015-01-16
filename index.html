@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en" ng-app="myApp" >
+<head>
     <meta charset="UTF-8">
     <title>CSMA/CA</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -8,30 +8,23 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" type="image/ico" href="images/internet.ico">
 </head>
-<body ng-app="myApp" ng-cloak>
+<body ng-cloak>
 <div id="wrapper">
     <div id="cssmenu">
-        <ul>
-            <li class="active"><a href="../index.html">Начало</a></li>
+        <ul ng-controller="IndexController">
+            <li class="active" ng-click="activate($event)"><a href="#/">Начало</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Въведение<b class="caret"></b></a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">CSMA/CA <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="csma-intro.html">Същност</a></li>
-                    <li><a href="csma-protocols.html">Протоколи за CSMA</a></li>
+                    <li ng-click="activate($event)"><a href="#/intro">Същност</a></li>
+                    <li ng-click="activate($event)"><a href="#/work">Как работи</a></li>
+                    <li ng-click="activate($event)"><a href="#/algorithm">Алгоритъм</a></li>
+                    <li ng-click="activate($event)"><a href="#/usage">Приложение</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSMA/CA <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="ca-intro.html">Същност</a></li>
-                    <li><a href="ca-work.html">Как работи</a></li>
-                    <li><a href="ca-algorithm.html">Алгоритъм</a></li>
-                    <li><a href="ca-usage.html">Приложение</a></li>
-                </ul>
-            </li>
-            <li><a href="cd.html">Сравнение със CSMA/CD</a></li>
-            <li><a href="online-lectures.html">Видео уроци</a></li>
-            <li><a href="resources.html">Полезни връзки</a></li>
+            <li ng-click="activate($event)"><a href="cd.html">Сравнение със CSMA/CD</a></li>
+            <li ng-click="activate($event)"><a href="#/videos">Видео уроци</a></li>
+            <li ng-click="activate($event)"><a href="#/resources">Полезни връзки</a></li>
         </ul>
     </div>
     <div ng-view>
@@ -53,6 +46,17 @@
 <script src="js/app.js"></script>
 
 <script src="js/controllers/home-controller.js"></script>
+<script src="js/controllers/intro-controller.js"></script>
+<script src="js/controllers/videos-controller.js"></script>
+<script src="js/controllers/algorithm-controller.js"></script>
+<script src="js/controllers/usage-controller.js"></script>
+<script src="js/controllers/work-controller.js"></script>
+<script src="js/controllers/resources-controller.js"></script>
+<script src="js/controllers/index-controller.js"></script>
+<script src="js/index.js"></script>
+
+
+
 
 </body>
 </html>
