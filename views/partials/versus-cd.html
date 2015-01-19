@@ -1,0 +1,59 @@
+<div>
+    <h1>Сравнение със CSMA/CD</h1>
+
+    <img class="img-responsive img-rounded img-thumbnail" src="images/vs.png"/>
+
+    <div>
+        <table class="table table-bordered table-condensed">
+            <thead>
+            <tr>
+                <th>Критерий</th>
+                <th>CSMA/CA</th>
+                <th>CSMA/CD</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Същност</td>
+                <td>Намалява възможността за поява на колизия</td>
+                <td>Минимизира времето за възстановяване</td>
+            </tr>
+            <tr>
+                <td>Влиза в сила</td>
+                <td>Преди колизия</td>
+                <td>След колизия</td>
+            </tr>
+            <tr>
+                <td>Бързодействие</td>
+                <td>По-бавен заради използването на повече сигнали.</td>
+                <td>Почти 50% по-бърз.</td>
+            </tr>
+            <tr>
+                <td>Производителност</td>
+                <td>Има много голямо отрицателно въздействие поради наличността на голям брой RTS съобщения (много от
+                    тях излишни), които трябва да бъдат изпратени в допълнение към самите данни.
+                </td>
+                <td>По-добра производителност от CSMA/CA, защото не натоварва мрежата с допълнителни сигнали.</td>
+            </tr>
+            <tr>
+                <td>Сигурност</td>
+                <td>По-надежден и сигурен начин за предаване на данни.</td>
+                <td>Възможност за загуба на данни при настъпването на колизия.</td>
+            </tr>
+            <tr>
+                <td>Използва се в</td>
+                <td>Wireless мрежи</td>
+                <td>Кабелни мрежи</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clearfix">
+        <div class="pull-left">
+            <a href="#/usage"><img class="nav-button" src="images/prev.png" alt="previous page"/></a>
+        </div>
+        <div class="pull-right">
+            <a href="#/videos"><img class="nav-button" src="images/next.png" alt="next page"/></a>
+        </div>
+    </div>
+</div>

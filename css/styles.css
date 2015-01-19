@@ -1,15 +1,116 @@
 body {
-    background-image: url('../images/background.png');
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background-image: url('../images/background.jpg');
+    background-color: black;
+    background-size: 100%;
     background-position: top center !important;
     background-repeat: no-repeat !important;
-    background-attachment: scroll;
+    padding: 0;
 }
+
+.up {
+    background-image: url('../images/up.png');
+    background-size: 90% 100%;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    height: 80px;
+}
+
+.down {
+    background-image: url('../images/down.png');
+    background-size: 90% 100%;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    height: 80px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    text-align: left;
+}
+
+body, h1, h2, h3, a, ul, li {
+    font-family: "Comic Sans MS", "Times New Roman", Times, serif;
+    color: yellow;
+}
+
+h1 {
+    color: black;
+    background-color: yellow;
+    border-radius: 40px;
+    margin: 15px  0 20px 0;
+    box-shadow: 0 0 30px white;
+}
+
+thead {
+    background-color: greenyellow;
+    color: black;
+}
+
+th {
+    text-align: center;
+}
+
+tr:nth-child(2n) {
+    background-color: yellow;
+    color: black;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: yellow;
+    padding: 15px;
+}
+
+footer strong, footer a, footer span {
+    color: black;
+}
+
+dd {
+    margin-bottom: 20px
+}
+
 #wrapper {
-    margin: 0 auto;
-   width: 90%;
+    box-shadow: 0 0 100px #888888;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+}
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+}
+
+img.nav-button:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.frame {
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 9%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #000000), color-stop(100%, #131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #000000 9%, #131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #000000 9%, #131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #000000 9%, #131313 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #000000 9%, #131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#131313', GradientType=0); /* IE6-9 */
+
+    color: yellow;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-link {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
@@ -27,46 +128,51 @@ body {
 }
 
 #cssmenu {
-    margin-top: 45px;
+    display: inline-block;
     border: 1px solid #133e40;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
     width: auto;
 }
+
 #cssmenu ul {
     zoom: 1;
-    background: #36b0b6;
-    background: -moz-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));
-    background: -webkit-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
-    background: -o-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
-    background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
-    background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+    background: rgb(157, 213, 58); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), color-stop(100%, rgba(124, 188, 10, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0); /* IE6-9 */
     padding: 5px 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
 }
+
 #cssmenu ul:before {
     content: '';
     display: block;
 }
+
 #cssmenu ul:after {
     content: '';
     display: table;
     clear: both;
 }
+
 #cssmenu li {
     float: left;
     margin: 0 5px 0 0;
     border: 1px solid transparent;
 }
+
 #cssmenu li a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -76,18 +182,21 @@ body {
     padding: 8px 15px 9px 15px;
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     border: 1px solid transparent;
     font-size: 16px;
+    font-family: "Comic Sans MS", "Times New Roman", Times, serif;
 }
+
 #cssmenu li.active {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #36b0b6;
+    border: 1px dashed #73A009;
 }
+
 #cssmenu li.active > a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -95,20 +204,22 @@ body {
     -o-border-radius: 5px;
     border-radius: 5px;
     display: block;
-    background: #1e6468;
-    border: 1px solid #133e40;
+    background: #8fc800;
+    border: 1px solid #73A009;
     -moz-box-shadow: inset 0 5px 10px #133e40;
     -webkit-box-shadow: inset 0 5px 10px #133e40;
     box-shadow: inset 0 5px 10px #133e40;
 }
+
 #cssmenu li:hover {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #36b0b6;
+    border: 1px dashed #73A009;
 }
+
 #cssmenu li:hover > a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -116,31 +227,34 @@ body {
     -o-border-radius: 5px;
     border-radius: 5px;
     display: block;
-    background: #1e6468;
-    border: 1px solid #133e40;
+    background: #7cbc0a;
+    border: 1px solid #73A009;
     -moz-box-shadow: inset 0 5px 10px #133e40;
     -webkit-box-shadow: inset 0 5px 10px #133e40;
     box-shadow: inset 0 5px 10px #133e40;
 }
 
-#frame{
-    padding: 35px 65px;
-    background-image: url('../images/container.png');
-    background-size: 86%;
-    background-repeat: no-repeat;
-    background-position: top center !important;
-
+#myCarousel {
+    margin-bottom: 20px;
 }
 
-.frame-content {
-    overflow-y: scroll;
+#myCarousel ul.nav {
+    border-radius: 0 0 20px 20px;
+    background-color: greenyellow;
 }
 
-.frame-content > div {
-    /*position:absolute;*/
-    /*height: 90%;*/
-    /*top:0;*/
-    /*left:0;*/
-    /*overflow:auto;*/
-    /*border: solid red 2px;*/
+#myCarousel ul.nav li:first-child {
+    border-radius: 0 0 0 20px;
+}
+
+#myCarousel ul.nav li:last-child {
+    border-radius: 0 0 20px 0;
+}
+
+#myCarousel ul.nav li h4 {
+    color: #000000;
+}
+
+#myCarousel .nav li {
+    background-color: greenyellow;
 }

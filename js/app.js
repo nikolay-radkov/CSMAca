@@ -31,13 +31,8 @@ var app = angular.module('myApp', ['ngRoute']).
                 templateUrl: 'views/partials/usage.html',
                 controller: 'UsageController'
             })
-//            .when('/partial1', {
-//                templateUrl: 'views/partials/partial1.html',
-//                controller: 'MyCtrl1'
-//            })
-//            .when('/partial2', {
-//                templateUrl: 'views/partials/partial2.html',
-//                controller: 'MyCtrl2'
-//            })
+            .when('/versus-cd',{
+                templateUrl: 'views/partials/versus-cd.html'
+            })
             .otherwise({ redirectTo: '/' });
     }]);

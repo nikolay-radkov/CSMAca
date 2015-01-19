@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp" >
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>CSMA/CA</title>
@@ -9,34 +9,63 @@
     <link rel="shortcut icon" type="image/ico" href="images/internet.ico">
 </head>
 <body ng-cloak>
-<div id="wrapper">
-    <div id="cssmenu">
-        <ul ng-controller="IndexController">
-            <li class="active" ng-click="activate($event)"><a href="#/">Начало</a></li>
-            <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">CSMA/CA <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li ng-click="activate($event)"><a href="#/intro">Същност</a></li>
-                    <li ng-click="activate($event)"><a href="#/work">Как работи</a></li>
-                    <li ng-click="activate($event)"><a href="#/algorithm">Алгоритъм</a></li>
-                    <li ng-click="activate($event)"><a href="#/usage">Приложение</a></li>
-                </ul>
-            </li>
-            <li ng-click="activate($event)"><a href="cd.html">Сравнение със CSMA/CD</a></li>
-            <li ng-click="activate($event)"><a href="#/videos">Видео уроци</a></li>
-            <li ng-click="activate($event)"><a href="#/resources">Полезни връзки</a></li>
-        </ul>
-    </div>
-    <div ng-view>
-    </div>
 
-    <hr />
-    <footer class="text-center" ng-cloak>
-        <strong>Copyright:</strong> <a href="https://github.com/nikolay-radkov/CSMAca" target="_blank">Nikolay Radkov</a></small>
-        <br />
-        Powered by:</strong> <a href="http://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a></small>
-    </footer>
-    <hr />
+<div class="container">
+    <div class="row">
+        <div class="up col-md-offset-4 col-sm-offset-2 col-md-4 col-sm-8 col-xs-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-xs-12">
+            <div id="wrapper">
+                <div class="frame">
+                    <div id="cssmenu">
+                        <ul ng-controller="IndexController">
+                            <li class="active" ng-click="activate($event)"><a href="#/">Начало</a></li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">CSMA/CA <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li ng-click="activate($event)"><a href="#/intro">Същност</a></li>
+                                    <li ng-click="activate($event)"><a href="#/work">Как работи</a></li>
+                                    <li ng-click="activate($event)"><a href="#/algorithm">Алгоритъм</a></li>
+                                    <li ng-click="activate($event)"><a href="#/usage">Приложение</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Още<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li ng-click="activate($event)"><a href="#/versus-cd">Сравнение със CSMA/CD</a>
+                                    </li>
+                                    <li ng-click="activate($event)"><a href="#/videos">Видео уроци</a></li>
+                                    <li ng-click="activate($event)"><a href="#/resources">Полезни връзки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div ng-view>
+                    </div>
+                </div>
+                <footer class="text-center">
+                    <strong>Copyright:</strong><a href="https://github.com/nikolay-radkov/CSMAca" target="_blank">Николай
+                    Радков</a>
+                    <br/>
+                    <span>
+                    <strong>Информация:</strong> Курсов проект по дисциплината <em><strong>"Компют ърни
+                        мрежи"</strong></em> в <strong>
+                        <a href="http://www.tu-sofia.bg/" target="_blank">ТУ-София</a></strong>
+                        </span>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="down col-md-offset-4 col-sm-offset-2 col-md-4 col-sm-8 col-xs-12">
+
+        </div>
+    </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -54,9 +83,5 @@
 <script src="js/controllers/resources-controller.js"></script>
 <script src="js/controllers/index-controller.js"></script>
 <script src="js/index.js"></script>
-
-
-
-
 </body>
 </html>
